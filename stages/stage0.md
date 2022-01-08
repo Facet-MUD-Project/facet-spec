@@ -20,6 +20,8 @@ A stage 0 repository SHOULD have the following files:
 
 * Issue templates
 * Pull request templates
+* `.pre-commit-config.yaml` - Set up pre-commit to run appropriate checks
+  before git commits.
 
 ## Required Config
 
