@@ -37,3 +37,5 @@ A stage 0 repository MUST have the following configuration set up:
 A stage 0 repository SHOULD use a package manager appropriate for the language,
 when possible. When multiple are available, every effort should be made to find
 the option which will work best for our scenario, and has the largest body of community support available.
+
+Build tools and build configuration are also setup at this stage and a minimalist "hello world" should be created to test the build tools.

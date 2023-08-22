@@ -1,24 +1,7 @@
-# Stage 1 - Basic chat server
+# Stage 1 - Echo Server
 
-This is the first stage of development, standing up a basic chat server. Users
-are able to create accounts, which are saved to disk; log in to existing
-accounts; and send chat messages which are broadcast to all connected users.
+This is first stage of development and acts as a test for whatever networking library is used for this version of the MUD. 
 
 ## Required Features
 
-The following set of features MUST be implemented fully in order for the Facet
-implementation to be considered complete for Stage 1.
-
-### Telnet Server
-
-The implementation MUST provide a way to start a telnet server which remains
-open at a specified port number. This telnet server MUST support the parts of
-the telnet protocol specified in [Telnet - Stage 1].
-
-### Account Creation
-
-### Login
-
-### Echo Server
-
-[Telnet - Stage 1]: ../features/telnet.md
+The echo server needs to have a listening socket that can be connected to via either a mud or telnet client. It will then accept connections on said listening socket and wait for a user to connect. It will then create a new connection/player object for that user to send and receive data on. Until the user closes their connection any data sent to the listening socket will be outputed on the listening sockets side as well as being echoed back to the sending connection.
